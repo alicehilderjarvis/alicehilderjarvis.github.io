@@ -1,7 +1,7 @@
 :root{
-  --bg:#EEE8DC;        /* paler oatmeal beige */
-  --accent:#c76b2c;    /* warm autumn orange for links */
-  --secondary:#6b7a55; /* gentle green accent on hover */
+  --bg:#EEE8DC;          /* paler oatmeal beige */
+  --accent:#c76b2c;      /* warm autumn orange for links */
+  --secondary:#0b3d0b;   /* dark forest green for hover and site title */
   --card-bg:rgba(255,255,255,0.65); /* semi-transparent card background */
   --card-border:rgba(107,122,85,0.08);
   --text:#222;
@@ -38,7 +38,7 @@ a:hover{
 .site-title{
   font-size:1.25rem;
   font-weight:600;
-  color:var(--text);
+  color:var(--secondary); /* dark forest green */
 }
 .nav{
   display:flex;
@@ -52,6 +52,7 @@ a:hover{
 }
 .nav a.active, .nav a:hover{
   border-bottom:2px solid rgba(199,107,44,0.12);
+  color:var(--secondary); /* dark forest green on hover */
 }
 .main{
   margin-top:22px;
