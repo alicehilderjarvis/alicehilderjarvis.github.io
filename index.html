@@ -1,2 +1,40 @@
-<!doctype html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Alice Hilder Jarvis</title> <link rel="stylesheet" href="styles.css"> </head> <body> <div class="container"> <header class="header"> <div> <div class="site-title">Alice Hilder Jarvis</div> <div class="small-muted">Academic | Researcher</div> </div> <nav class="nav" aria-label="Main navigation"> <a href="index.html" class="active">Home</a> <a href="about.html">About</a> <a href="cv.html">CV</a> <a href="papers.html">Papers</a> <a href="teaching.html">Teaching</a> <a href="contact.html">Contact</a> </nav> </header> <main class="main"> <section class="home-top"> <img src="photo.jpg" alt="Portrait of Alice Hilder Jarvis" class="portrait"> <div style="flex:1; min-width:220px"> <h1>Alice Hilder Jarvis</h1> <p class="small-muted">Welcome — I work on [your short research focus here].</p> <div class="links"> <div class="card"><a href="about.html">→ About</a></div> <div class="card"><a href="cv.html">→ Curriculum Vitae (CV)</a></div> <div class="card"><a href="papers.html">→ Papers</a></div> <div class="card"><a href="teaching.html">→ Teaching</a></div> <div class="card"><a href="contact.html">→ Contact</a></div> </div> </div> </section> </main> <footer class="footer"> © <span id="yr"></span> Alice Hilder Jarvis </footer> </div> <script>document.getElementById('yr').textContent=new Date().getFullYear()</script> </body>  Force rebuild
- </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alice Hilder Jarvis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="site-title">Alice Hilder Jarvis</div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="papers.html">Papers</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home-top">
+        <img src="photo.jpg" alt="Portrait of Alice Hilder Jarvis" class="portrait">
+        <div class="links">
+          <div class="card"><a href="about.html">→ About</a></div>
+          <div class="card"><a href="cv.html">→ Curriculum Vitae (CV)</a></div>
+          <div class="card"><a href="papers.html">→ Papers</a></div>
+          <div class="card"><a href="teaching.html">→ Teaching</a></div>
+          <div class="card"><a href="contact.html">→ Contact</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© <span id="yr"></span> Alice Hilder Jarvis</footer>
+  </div>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
