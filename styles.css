@@ -1,7 +1,7 @@
 :root{
-  --bg:#EEE8DC;          /* paler oatmeal beige */
-  --accent:#c76b2c;      /* warm autumn orange for links */
-  --secondary:#0b3d0b;   /* dark forest green for hover and site title */
+  --bg:#e6be8a;          /* changed from eee8dc */
+  --accent:#480607;      /* changed from c76b2c */
+  --secondary:#4f7942;   /* changed from dark forest green 0b3d0b */
   --card-bg:rgba(255,255,255,0.65); /* semi-transparent card background */
   --card-border:rgba(107,122,85,0.08);
   --text:#222;
