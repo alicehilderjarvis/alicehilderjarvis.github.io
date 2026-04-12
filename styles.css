@@ -1,10 +1,10 @@
 :root{
-  --bg:#fffdd0;          /* changed from eee8dc */
-  --accent:#480607;      /* changed from c76b2c */
-  --secondary:#4f7942;   /* changed from dark forest green 0b3d0b */
-  --card-bg:rgba(255,255,255,0.65); /* semi-transparent card background */
-  --card-border:rgba(107,122,85,0.08);
-  --text:#222;
+  --bg:#F7F9F7;
+  --accent:#2F5D50;
+  --secondary:#E8CFCF;
+  --card-bg:rgba(255,255,255,0.8);
+  --card-border:rgba(0,0,0,0.06);
+  --text:#1F2A27;
   --maxw:1000px;
 }
 *{box-sizing:border-box}
@@ -38,7 +38,7 @@ a:hover{
 .site-title{
   font-size:1.25rem;
   font-weight:600;
-  color:var(--secondary); /* dark forest green */
+  color:var(--accent);
 }
 .nav{
   display:flex;
@@ -51,8 +51,8 @@ a:hover{
   padding:6px 8px;
 }
 .nav a.active, .nav a:hover{
-  border-bottom:2px solid rgba(199,107,44,0.12);
-  color:var(--secondary); /* dark forest green on hover */
+  border-bottom:2px solid var(--secondary);
+  color:var(--accent);
 }
 .main{
   margin-top:22px;
@@ -104,4 +104,15 @@ iframe{
   border:none;
   width:100%;
   height:800px;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0F1412;
+    --accent:#7FB3A8;
+    --secondary:#D9AFAF;
+    --card-bg:rgba(255,255,255,0.05);
+    --card-border:rgba(255,255,255,0.08);
+    --text:#E6EFEA;
+  }
 }
