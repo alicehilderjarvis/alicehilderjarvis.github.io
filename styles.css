@@ -119,33 +119,45 @@ iframe{
 
 
 
-/* About page: text and image side by side */
-.about-layout {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 2rem;
-  align-items: start;
+
+/* About page layout */
+.about-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-.about-text {
+/* Text column */
+.about-top .about-text {
+  flex: 1;
   min-width: 0;
 }
 
-.about-image {
+/* Image column */
+.about-top .about-image {
   display: block;
-  width: 100%;
+  width: 300px;
+  max-width: 35%;
   height: auto;
-  border-radius: 4px;
+  flex-shrink: 0;
+  border-radius: 6px;
 }
 
-/* On mobile, put the image underneath the text */
-@media (max-width: 700px) {
-  .about-layout {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+/* Mobile: text first, image underneath */
+@media (max-width: 720px) {
+  .about-top {
+    flex-direction: column;
   }
 
-  .about-image {
-    max-width: 100%;
+  .about-top .about-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .about-top .about-image {
+    order: 2;
+    width: 100%;
+    max-width: 300px;
   }
 }
